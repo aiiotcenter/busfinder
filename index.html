@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Bus Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-bus"></i> School Bus Finder</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-container">
+            <input id="destination-input" type="search" placeholder="Enter your destination">
+            <button id="search-button">Search</button>
+            <button id="choose-on-map-button">Choose on map</button>
+        </div>
+    </header>
+    <main>
+        <div id="map-container">
+            <div id="map"></div>
+            <div id="routing-control-panel" class="routing-control-panel"></div>
+        </div>
+        <div id="button-container">
+        
+        <button class="route-button" id="route-1">Lefkoşa 1</button>
+        <button class="route-button" id="route-2">Lefkoşa 2</button>
+        <button class="route-button" id="route-3">Kızılbaş</button>
+        <button class="route-button" id="route-4">Gönyeli 1</button>
+        <button class="route-button" id="route-5">Gönyeli 2</button>
+        <button class="route-button" id="route-6">Gönyeli / Metehan</button>
+        <button class="route-button" id="route-7">Ortaköy / Yenikent</button>
+        <button class="route-button" id="route-8">Campus - Kyrenia</button>
+        <button class="route-button" id="route-9">Campus - Güzelyurt</button>
+        <button class="route-button" id="route-10">Campus - Famagusta</button>
+        </div>
+        <div id="route-info-panel" class="route-info-panel">
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© 2024 School Bus Finder. All rights reserved.</p>
+            <p>Made with ❤️</p> 
+        </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
